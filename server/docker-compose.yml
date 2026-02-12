@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgis/postgis:15-3.4
+    container_name: polygons-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: polygons
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
