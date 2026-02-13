@@ -21,7 +21,8 @@
     "multer": "^2.0.2",
     "npm": "^11.10.0",
     "pg": "^8.18.0",
-    "xmldom": "^0.6.0"
+    "xmldom": "^0.6.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/compression": "^1.8.1",
